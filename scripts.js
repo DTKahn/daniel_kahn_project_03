@@ -6,31 +6,31 @@
 const batman = [
     {
         name: 'Bruce Wayne',
-        url: 'assets/batman.jpg'
+        url: 'assets/batman-sqr.jpg'
     },
     {
         name: 'Alfred Pennyworth',
-        url: 'assets/alfred.jpg'
+        url: 'assets/alfred-sqr.jpg'
     },
     {
         name: 'Dick Grayson',
-        url: 'assets/robin.jpg'
+        url: 'assets/robin-sqr.jpg'
     },
     {
         name: 'Selina Kyle',
-        url: 'assets/catwoman.jpg'
+        url: 'assets/catwoman-sqr.jpg'
     },
     {
         name: 'The Joker',
-        url: 'assets/joker.jpg'
+        url: 'assets/joker-sqr.jpg'
     },
     {
         name: 'Edward Nigma',
-        url: 'assets/riddler.jpg'
+        url: 'assets/riddler-sqr.jpg'
     },
     {
         name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin.jpg'
+        url: 'assets/penguin-sqr.jpg'
     }
 ];
 
@@ -58,18 +58,30 @@ $(function () {
         let $name = $('<h2>').text(peopleArray[position].name);
 
         $('.name').append($name);
+
+        // Test adding the name to a button
+        $('#name-1').text(peopleArray[position].name);
+
+
     };
 
     const indexToPass = randomArraryIndex(batman);
 
-    showHeadshot(batman, indexToPass);
-    showName(batman, indexToPass);
+    const showPhotoAndName = function(peopleArray, position){
+        showHeadshot(peopleArray, position);
+        showName(peopleArray, position);
+    };
+
+    showPhotoAndName(batman, indexToPass);
 
 
 });
 
 // Provide 3 wrong names
-    // Create a list of all names (populated from the names in the classmates object)
+    // Create a list of all names 
+        // populated from the names in the classmates object AND already answered object
+        // populating from both so that there are enough names 
+        // check that the name is not the name of the person being used in the question
 
 // Stop classmates who have already been shown from showing again unless all have been shown
 
@@ -78,8 +90,8 @@ $(function () {
     // -1 for every wrong answer
 
 // Limit play to 60 seconds
-    // Show countdown? (number or bar)
+    // Show countdown? (number or bar?)
 
-// Display the image of the classmate
+// Display the image of the person
 
 // Display all 4 names (1 correct and 3 wrong)
