@@ -2,6 +2,60 @@
     // Name
     // Img (link to img)
 
+// Test list of 60s Batman
+const batman = [
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin.jpg'
+    }
+];
+
+const randomArraryIndex = function(array) {
+    // Takes an array and returns a number corresponding to random index in that array
+    return Math.floor(Math.random() * array.length);
+};
+
+// Doc ready jQuery
+$(function () {
+    
+    const showHeadshot = function(peopleArray, position){
+        // takes 2 args, peopleArray - an array of object which contain an attribut named "url", and position - the position in the array
+        // places the image on the DOM by appending it as an img to the object with the class 'headshot'
+
+        let $image = $('<img>').attr('src', peopleArray[position].url).attr('alt', `This is an image of the current person who's name needs to be selected.`);
+    
+        $('.headshot').append($image);
+    };
+
+    showHeadshot(batman, randomArraryIndex(batman));
+
+
+});
+
 // Provide 3 wrong names
     // Create a list of all names (populated from the names in the classmates object)
 
