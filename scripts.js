@@ -43,7 +43,7 @@ const randomArraryIndex = function(array) {
 $(function () {
     
     const showHeadshot = function(peopleArray, position){
-        // takes 2 args, peopleArray - an array of object which contain an attribut named "url", and position - the position in the array
+        // takes 2 args, peopleArray - an array of object which contains an attribute named "url", and position - the position in the array
         // places the image on the DOM by appending it as an img to the object with the class 'headshot'
 
         let $image = $('<img>').attr('src', peopleArray[position].url).attr('alt', `This is an image of the current person who's name needs to be selected.`);
@@ -51,7 +51,19 @@ $(function () {
         $('.headshot').append($image);
     };
 
-    showHeadshot(batman, randomArraryIndex(batman));
+    const showName = function (peopleArray, position) {
+        // takes 2 args, peopleArray - an array of object which contains an attribute named "name", and position - the position in the array
+        // places the name on the DOM by appending it as an img to the object with the class 'name'
+
+        let $name = $('<h2>').text(peopleArray[position].name);
+
+        $('.name').append($name);
+    };
+
+    const indexToPass = randomArraryIndex(batman);
+
+    showHeadshot(batman, indexToPass);
+    showName(batman, indexToPass);
 
 
 });
