@@ -120,6 +120,16 @@ zzz.setCorrectAnswer = function(){
     zzz.arrayToArray(zzz.gameList, zzz.correctAnswer, 1);
 }
 
+// Removes 3 objects from zzz.gameList and adds them to zzz.answerOptions
+zzz.setWrongAnswerOptions = function(){
+    zzz.arrayToArray(zzz.gameList, zzz.answerOptions, 3);
+}
+
+zzz.addCorrectAnswerToAnswerOptions = function(){
+    zzz.answerOptions.push(zzz.correctAnswer.slice(0)[0])
+}
+
+
 // Takes an array containing 1 object which has an img attribute and displays it under an object with the class "headshot"
 zzz.showHeadshot = function(objectWithImgAttr) {
 
@@ -133,8 +143,17 @@ zzz.showHeadshot = function(objectWithImgAttr) {
 zzz.init = function() {
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
+    
     zzz.setCorrectAnswer();
+    
+    // Might move into zzz.setCorrectAnswer
     zzz.showHeadshot(zzz.correctAnswer);
+
+    // Might move into zzz.setCorrectAnswer
+    zzz.setWrongAnswerOptions();
+
+    // Might move into zzz.setCorrectAnswer
+    zzz.addCorrectAnswerToAnswerOptions();
     
 
 };
