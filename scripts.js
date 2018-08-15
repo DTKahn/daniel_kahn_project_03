@@ -2,7 +2,7 @@
     // Name
     // Img (link to img)
 
-// Test list of 60s Batman
+// TEST LIST: 60s BATMAN
 const batman = [
     {
         name: 'Bruce Wayne',
@@ -34,48 +34,75 @@ const batman = [
     }
 ];
 
-const randomArraryIndex = function(array) {
-    // Takes an array and returns a number corresponding to random index in that array
+
+// Takes an array and returns a number corresponding to random index in that array
+const randomArrayIndex = function(array) {
     return Math.floor(Math.random() * array.length);
 };
 
-// Doc ready jQuery
+// Ready, M.D.
 $(function () {
     
-    const showHeadshot = function(peopleArray, position){
-        // takes 2 args, peopleArray - an array of object which contains an attribute named "url", and position - the position in the array
-        // places the image on the DOM by appending it as an img to the object with the class 'headshot'
+    const selectedArray = batman;
 
-        let $image = $('<img>').attr('src', peopleArray[position].url).attr('alt', `This is an image of the current person who's name needs to be selected.`);
-    
+
+    // Empty array of answer options which will be used to constuct buttons
+        // Will be added to and called on by several functions
+    let answerOptions = [];
+
+    // takes 2 args, peopleArray - an array of object which contains an attribute named "url", and position - the position in the array
+    // places the image on the DOM by appending it as an img to the object with the class 'headshot'
+    const showHeadshot = function(peopleArray, position){
+
+        // Sets variable $image to be the question image
+        let $image = $('<img>').attr('src', peopleArray[position].url).attr('alt', `This is an image of the person who's name needs to be selected in one of the answer buttons.`);
+        
+        // Places the question image on the DOM under the element with the class "headshot"
         $('.headshot').append($image);
     };
 
-    const showName = function (peopleArray, position) {
-        // takes 2 args, peopleArray - an array of object which contains an attribute named "name", and position - the position in the array
-        // places the name on the DOM by appending it as an img to the object with the class 'name'
-
-        let $name = $('<h2>').text(peopleArray[position].name);
-
-        $('.name').append($name);
-
-        // Test adding the name to a button
-        $('#name-1').text(peopleArray[position].name);
-
-
+    // takes 2 args, peopleArray - an array of object which contains an attribute named "name", and position - the position in the array
+        // Gets the name from 'name' in the peopleArray
+        // Adds name to an array of answer options
+    const getName = function (peopleArray, position) {
+        
+        // CLs the name of the correct answer
+        console.log(`Correct answer: ${peopleArray[position].name}`);
+        
+        // Adds the name of the correct answer to the answerOptions array
+        answerOptions.push(peopleArray[position].name);
+        console.log(`answerOptions Array: ${answerOptions}`);
     };
 
-    const indexToPass = randomArraryIndex(batman);
-
+    // const indexToPass = randomArrayIndex(batman);
     const showPhotoAndName = function(peopleArray, position){
         showHeadshot(peopleArray, position);
-        showName(peopleArray, position);
+        getName(peopleArray, position);
     };
 
-    showPhotoAndName(batman, indexToPass);
+    showPhotoAndName(batman, randomArrayIndex(batman));
 
+    // Actions to perform on form submit
+    $('form').on('submit', function(event){
+        // prevent the default
+        event.preventDefault();
+
+
+        // Reset DOM for next face
+        $('.headshot').empty();
+        $('.name').empty(); // <-- will be getting rid of name after testing
+
+        showPhotoAndName(batman, randomArrayIndex(batman));
+       
+        // Keep track of score
+            // +1 for every correct answer
+            // -1 for every wrong answer
+
+    });
+    // ^End of Form Submit Event Handler
 
 });
+// ^End of Ready, M.D.
 
 // Provide 3 wrong names
     // Create a list of all names 
@@ -85,9 +112,6 @@ $(function () {
 
 // Stop classmates who have already been shown from showing again unless all have been shown
 
-// Keep track of score
-    // +1 for every correct answer
-    // -1 for every wrong answer
 
 // Limit play to 60 seconds
     // Show countdown? (number or bar?)
