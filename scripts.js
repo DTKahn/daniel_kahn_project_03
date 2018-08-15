@@ -73,7 +73,6 @@ zzz.array2 = []
 // Takes an array and returns a number corresponding to random index in that array
 zzz.randomArrayIndex = function(array) {
     const randIndex = Math.floor(Math.random() * array.length);
-    console.log(`randomArrayIndex index: ${randIndex}`);
     return randIndex;
 };
 
@@ -121,6 +120,15 @@ zzz.setCorrectAnswer = function(){
 }
 
 // Removes 3 objects from zzz.gameList and adds them to zzz.answerOptions
+// Using arrayToArray which leverages splice, rather than using slice so that we do not return the same wrong answer option more than once
+//
+// Will add the wrong answers back to the zzz.gameList array after the user picks an answer and before generating the next correct answer
+//
+// Should create another copy of the gameList which always contains all of the answer options except the correct answer 
+//
+// OR just use the original array (NOT gameList) and if the wrong answer option matches the correct answer get another answer
+//
+// OR set wrong answers from a combined array of the current state of the zzz.gameList array concat'd with a zzz.alreadyAnswered array (which still needs to be created) which will be a complete list of the answers except for the correct answer. <-- probably this one?
 zzz.setWrongAnswerOptions = function(){
     zzz.arrayToArray(zzz.gameList, zzz.answerOptions, 3);
 }
@@ -128,7 +136,6 @@ zzz.setWrongAnswerOptions = function(){
 zzz.addCorrectAnswerToAnswerOptions = function(){
     zzz.answerOptions.push(zzz.correctAnswer.slice(0)[0])
 }
-
 
 // Takes an array containing 1 object which has an img attribute and displays it under an object with the class "headshot"
 zzz.showHeadshot = function(objectWithImgAttr) {
@@ -140,19 +147,26 @@ zzz.showHeadshot = function(objectWithImgAttr) {
     $('.headshot').append($image);
 };
 
+// Creates answer buttons from the list of answer options
+zzz.buildAnswerButtons = function(){
+    return _.shuffle(zzz.answerOptions);
+}
+
 zzz.init = function() {
+    console.log('And why doesn’t Batman dance anymore? Remember the Batusi?');
+    
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
     
     zzz.setCorrectAnswer();
     
-    // Might move into zzz.setCorrectAnswer
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.showHeadshot(zzz.correctAnswer);
 
-    // Might move into zzz.setCorrectAnswer
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.setWrongAnswerOptions();
 
-    // Might move into zzz.setCorrectAnswer
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.addCorrectAnswerToAnswerOptions();
     
 
