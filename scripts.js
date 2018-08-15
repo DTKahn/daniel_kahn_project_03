@@ -1,9 +1,9 @@
 // Create a classmates object with
-    // Name
-    // Img (link to img)
+// Name
+// Img (link to img)
 
 // TEST LIST: 60s BATMAN
-const batman = [
+const batman60s = [
     {
         name: 'Bruce Wayne',
         url: 'assets/batman-sqr.jpg'
@@ -34,21 +34,88 @@ const batman = [
     }
 ];
 
+// test array with 9 numbers
+const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// test array with 6 objects
+const array1withObjects = [
+    {
+        fruit: 'apple',
+        stock: 32
+    },
+    {
+        fruit: 'banana',
+        stock: 7
+    },
+    {
+        fruit: 'pear',
+        stock: 10
+    },
+    {
+        fruit: 'grape',
+        stock: 200
+    },
+    {
+        fruit: 'watermelon',
+        stock: 6
+    },
+    {
+        fruit: 'honeydew',
+        stock: 14
+    }
+]
+// test empty array
+const array2 = []
+
 
 // Takes an array and returns a number corresponding to random index in that array
-const randomArrayIndex = function(array) {
+const randomArrayIndex = function (array) {
     return Math.floor(Math.random() * array.length);
+};
+
+
+// Removes a number of items from a target array
+    // Takes args: 
+    // removeFromArray, the array from which items are removed
+    // addToArray, the array to which items are added
+    // numberToRemove, the number of items to remove from the target array
+const arrayToArray = function (removeFromArray, addToArray, numberToRemove) {
+    // run numberToRemove times
+    for (i = 0; i < numberToRemove; i++) {
+        // randomArrayIndex returns a random index from any array
+        // 1 indicates removing 1 item at the index
+        // push adds the spliced item to the array provided in the addToArray arg
+
+        // holds an array with length of 1
+        const removedValue = removeFromArray.splice(randomArrayIndex(removeFromArray), 1)
+        console.log(removedValue);
+        
+        // takes the first (only) item in the array removed value and adds it to the array in arg addToArry
+        addToArray.push(removedValue[0]);
+    };
 };
 
 // Ready, M.D.
 $(function () {
     
-    const selectedArray = batman;
+    // Select array from list of array option
+        // Currently just assigning the array, but will later let users pick from a list of topics
+        // Variable for the main array is called batman because batman.
+    const batman = batman60s;
 
 
     // Empty array of answer options which will be used to constuct buttons
         // Will be added to and called on by several functions
     let answerOptions = [];
+
+    // questionAndAnswer variable which 
+        // takes two args, an array of any length, number of elements to remove
+        // removes elements from the passed array at random
+        // returns the removed elements as an array
+    
+    
+    const correctAnswer = function(batman){
+
+    };
 
     // takes 2 args, peopleArray - an array of object which contains an attribute named "url", and position - the position in the array
     // places the image on the DOM by appending it as an img to the object with the class 'headshot'
