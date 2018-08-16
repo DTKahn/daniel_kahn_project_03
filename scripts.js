@@ -21,20 +21,19 @@ zzz.batman = [
     {
         name: 'Selina Kyle',
         url: 'assets/catwoman-sqr.jpg'
-    }
-    // ,
-    // {
-    //     name: 'The Joker',
-    //     url: 'assets/joker-sqr.jpg'
-    // },
-    // {
-    //     name: 'Edward Nigma',
-    //     url: 'assets/riddler-sqr.jpg'
-    // },
-    // {
-    //     name: 'Oswald Chesterfield Cobblepot',
-    //     url: 'assets/penguin-sqr.jpg'
-    // },
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
     // //////////
     // {
     //     name: 'Bruce Wayne',
@@ -389,11 +388,23 @@ zzz.correctAnswer = [];
 // The array used to play the game will be copied into this array
 zzz.gameList = [];
 
+// Holds the objects that have already been answered
+zzz.alreadyAnswered = [];
+
+// Moves answer zzz.correctAnswer to zzz.alreadyAnswered
+zzz.moveToAlreadyAnswered = function(){
+    zzz.alreadyAnswered.push(zzz.correctAnswer.splice(0,1)[0]);
+}
+
 // Copy array to new array which will be modified during play
 zzz.setGameList = function(originalGamePlayArray){
     originalGamePlayArray.forEach((item) => {
         zzz.gameList.push(item);
     });
+}
+
+zzz.clearAnswerOptions = function(){
+    zzz.answerOptions = [];
 };
 
 // Moves 1 object from the gameList to correctAnswer
@@ -404,7 +415,7 @@ zzz.setCorrectAnswer = function(){
 // Removes 3 objects from zzz.gameList and adds them to zzz.answerOptions
 // Using arrayToArray which leverages splice, rather than using slice so that we do not return the same wrong answer option more than once
 //
-// Will add the wrong answers back to the zzz.gameList array after the user picks an answer and before generating the next correct answer
+// Adds the wrong answer options to zzz.answerOptions
 //
 // Should create another copy of the gameList which always contains all of the answer options except the correct answer 
 //
@@ -413,18 +424,26 @@ zzz.setCorrectAnswer = function(){
 // OR set wrong answers from a combined array of the current state of the zzz.gameList array concat'd with a zzz.alreadyAnswered array (which still needs to be created) which will be a complete list of the answers except for the correct answer. <-- probably this one?
 zzz.setWrongAnswerOptions = function(){
     
+    // Wrong answer options built from a new array made up of zzz.gameList AND zzz.alreadyAnswered so that we always have the complete set of answers to draw on except for the correct answer
+
+    const buildWrongAnswersFrom = []
+    
+    zzz.gameList.forEach(element => {
+        buildWrongAnswersFrom.push(element)
+    });
+
+    zzz.alreadyAnswered.forEach(element => {
+        buildWrongAnswersFrom.push(element)
+    });
+
     const wrongAnswerOptions = []
     
-    zzz.arrayToArray(zzz.gameList, wrongAnswerOptions, 3);
+    zzz.arrayToArray(buildWrongAnswersFrom, wrongAnswerOptions, 3);
 
     wrongAnswerOptions.forEach(element => {
         
         // Adds the wrong answer options to zzz.answerOptions
         zzz.answerOptions.push(element);
-        
-        // Returns the wrong answer options to zzz.gameList
-        zzz.gameList.push(element);
-        
     });
 }
 
@@ -455,6 +474,34 @@ zzz.buildAnswerButtons = function() {
     });
 }
 
+// Calls all the functions need to display the question
+zzz.buildNew = function(){
+    zzz.setCorrectAnswer();
+
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
+    zzz.showHeadshot(zzz.correctAnswer);
+
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
+    zzz.setWrongAnswerOptions();
+
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
+    zzz.addCorrectAnswerToAnswerOptions();
+
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
+    zzz.buildAnswerButtons();
+}
+
+// Clears the field for the next question
+zzz.clearForNext = function(){
+    zzz.clearAnswerOptions();
+    zzz.moveToAlreadyAnswered();
+    $('.headshot').empty();
+    $('.answers').empty();
+
+};
+
+
+
 // Take answer from button text and change score
 zzz.buttonClick = function() {
     $('.answers').on('click', 'button', function() {
@@ -471,23 +518,10 @@ zzz.buttonClick = function() {
             zzz.score--;
             console.log(zzz.score);
         };
+        
+        zzz.clearForNext();
+        zzz.buildNew();
 
-        $('.headshot').empty();
-        $('.answers').empty();
-
-        zzz.setCorrectAnswer();
-
-        // Might move into zzz.setCorrectAnswer or some other answer constructor
-        zzz.showHeadshot(zzz.correctAnswer);
-
-        // Might move into zzz.setCorrectAnswer or some other answer constructor
-        zzz.setWrongAnswerOptions();
-
-        // Might move into zzz.setCorrectAnswer or some other answer constructor
-        zzz.addCorrectAnswerToAnswerOptions();
-
-        // Might move into zzz.setCorrectAnswer or some other answer constructor
-        zzz.buildAnswerButtons();
     });    
 }
 
@@ -506,24 +540,9 @@ zzz.score = 0;
 zzz.init = function() {
     console.log('And why doesn’t Batman dance anymore? Remember the Batusi?');
     
-    
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
-    
-    zzz.setCorrectAnswer();
-    
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
-    zzz.showHeadshot(zzz.correctAnswer);
-    
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
-    zzz.setWrongAnswerOptions();
-    
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
-    zzz.addCorrectAnswerToAnswerOptions();
-    
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
-    zzz.buildAnswerButtons();
-    
+    zzz.buildNew();
     zzz.buttonClick();
 
 };
@@ -531,7 +550,7 @@ zzz.init = function() {
 // Ready, M.D.
 $(function () {
     
-    zzz.init()
+    zzz.init();
 
 });
 // ^End of Ready, M.D.
