@@ -33,6 +33,287 @@ zzz.batman = [
     {
         name: 'Oswald Chesterfield Cobblepot',
         url: 'assets/penguin-sqr.jpg'
+    },
+    //////////
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
+    },
+    {
+        name: 'Bruce Wayne',
+        url: 'assets/batman-sqr.jpg'
+    },
+    {
+        name: 'Alfred Pennyworth',
+        url: 'assets/alfred-sqr.jpg'
+    },
+    {
+        name: 'Dick Grayson',
+        url: 'assets/robin-sqr.jpg'
+    },
+    {
+        name: 'Selina Kyle',
+        url: 'assets/catwoman-sqr.jpg'
+    },
+    {
+        name: 'The Joker',
+        url: 'assets/joker-sqr.jpg'
+    },
+    {
+        name: 'Edward Nigma',
+        url: 'assets/riddler-sqr.jpg'
+    },
+    {
+        name: 'Oswald Chesterfield Cobblepot',
+        url: 'assets/penguin-sqr.jpg'
     }
 ];
 
@@ -141,19 +422,75 @@ zzz.addCorrectAnswerToAnswerOptions = function(){
 zzz.showHeadshot = function(objectWithImgAttr) {
 
     // Sets variable $image to be the question image
-    let $image = $('<img>').attr('src', objectWithImgAttr[0].url).attr('alt', `This is an image of the person who's name needs to be selected in one of the answer buttons.`);
+    const $image = $('<img>').attr('src', objectWithImgAttr[0].url).attr('alt', `This is an image of the person who's name needs to be selected in one of the answer buttons.`);
 
     // Places the question image on the DOM under the element with the class "headshot"
     $('.headshot').append($image);
 };
 
 // Creates answer buttons from the list of answer options
-zzz.buildAnswerButtons = function(){
-    return _.shuffle(zzz.answerOptions);
+zzz.buildAnswerButtons = function() {
+    const shuffled = _.shuffle(zzz.answerOptions);
+    
+    shuffled.forEach(item => {
+        
+        const $button = $('<button>').text(item.name);
+        
+        $('.answers').append($button);
+    });
 }
+
+// Take answer from button text and change score
+zzz.buttonClick = function() {
+    $('.answers').on('click', 'button', function() {
+        
+        const $answer = $(this).text();
+        console.log($answer);
+        
+        // Change score
+        if ($answer === zzz.correctAnswer[0].name){
+            zzz.score++;
+            console.log(zzz.score);
+        }
+        else {
+            zzz.score--;
+            console.log(zzz.score);
+        };
+
+        $('.headshot').empty();
+        $('.answers').empty();
+
+        zzz.setCorrectAnswer();
+
+        // Might move into zzz.setCorrectAnswer or some other answer constructor
+        zzz.showHeadshot(zzz.correctAnswer);
+
+        // Might move into zzz.setCorrectAnswer or some other answer constructor
+        zzz.setWrongAnswerOptions();
+
+        // Might move into zzz.setCorrectAnswer or some other answer constructor
+        zzz.addCorrectAnswerToAnswerOptions();
+
+        // Might move into zzz.setCorrectAnswer or some other answer constructor
+        zzz.buildAnswerButtons();
+    });    
+}
+
+zzz.score = 0;
+
+// Keep track of score
+//// +1 for every correct answer
+//// -1 for every wrong answer
+
+// Stop classmates who have already been shown from showing again unless all have been shown
+
+
+// Limit play to 60 seconds
+//// Show countdown? (number or bar?)
 
 zzz.init = function() {
     console.log('And why doesn’t Batman dance anymore? Remember the Batusi?');
+    
     
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
@@ -162,36 +499,19 @@ zzz.init = function() {
     
     // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.showHeadshot(zzz.correctAnswer);
-
+    
     // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.setWrongAnswerOptions();
-
+    
     // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.addCorrectAnswerToAnswerOptions();
     
+    // Might move into zzz.setCorrectAnswer or some other answer constructor
+    zzz.buildAnswerButtons();
+    
+    zzz.buttonClick();
 
 };
-
-// Keep track of score
-//// +1 for every correct answer
-//// -1 for every wrong answer
-
-
-// Provide 3 wrong names
-//// Create a list of all names 
-////// populated from the names in the classmates object AND already answered object
-////// populating from both so that there are enough names 
-////// check that the name is not the name of the person being used in the question
-
-// Stop classmates who have already been shown from showing again unless all have been shown
-
-
-// Limit play to 60 seconds
-//// Show countdown? (number or bar?)
-
-// Display the image of the person
-
-// Display all 4 names (1 correct and 3 wrong)
 
 // Ready, M.D.
 $(function () {
@@ -200,3 +520,12 @@ $(function () {
 
 });
 // ^End of Ready, M.D.
+
+/*
+Next steps:
+- clear out arrays like answerOptions
+- rebuild the gameList array when empty
+- store the answered objects in an answered array
+
+- make a timer
+*/
