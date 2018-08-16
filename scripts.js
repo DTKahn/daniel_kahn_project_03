@@ -388,6 +388,7 @@ zzz.correctAnswer = [];
 // The array used to play the game will be copied into this array
 zzz.gameList = [];
 
+// Stop classmates who have already been shown from showing again unless all have been shown
 // Holds the objects that have already been answered
 zzz.alreadyAnswered = [];
 
@@ -413,15 +414,8 @@ zzz.setCorrectAnswer = function(){
 }
 
 // Removes 3 objects from zzz.gameList and adds them to zzz.answerOptions
-// Using arrayToArray which leverages splice, rather than using slice so that we do not return the same wrong answer option more than once
-//
-// Adds the wrong answer options to zzz.answerOptions
-//
-// Should create another copy of the gameList which always contains all of the answer options except the correct answer 
-//
-// OR just use the original array (NOT gameList) and if the wrong answer option matches the correct answer get another answer
-//
-// OR set wrong answers from a combined array of the current state of the zzz.gameList array concat'd with a zzz.alreadyAnswered array (which still needs to be created) which will be a complete list of the answers except for the correct answer. <-- probably this one?
+//// Using arrayToArray which leverages splice, rather than using slice so that we do not return the same wrong answer option more than once
+//// Adds the wrong answer options to zzz.answerOptions
 zzz.setWrongAnswerOptions = function(){
     
     // Wrong answer options built from a new array made up of zzz.gameList AND zzz.alreadyAnswered so that we always have the complete set of answers to draw on except for the correct answer
@@ -491,12 +485,21 @@ zzz.buildNew = function(){
     zzz.buildAnswerButtons();
 }
 
-// Clears the field for the next question
+// Checks if length of zzz.gameList is 0 and if it is, rebuilds it from  zzz.alreadyAnswered, clearing zzz.alreadyAnwered
+zzz.rebuildGameList = function(){
+    if(zzz.gameList.length === 0){
+        zzz.gameList = zzz.alreadyAnswered;
+        zzz.alreadyAnswered = [];
+    };
+};
+
+// Resets the field for the next question
 zzz.clearForNext = function(){
     zzz.clearAnswerOptions();
     zzz.moveToAlreadyAnswered();
     $('.headshot').empty();
     $('.answers').empty();
+    zzz.rebuildGameList();
 
 };
 
@@ -525,14 +528,10 @@ zzz.buttonClick = function() {
     });    
 }
 
-zzz.score = 0;
-
 // Keep track of score
 //// +1 for every correct answer
 //// -1 for every wrong answer
-
-// Stop classmates who have already been shown from showing again unless all have been shown
-
+zzz.score = 0;
 
 // Limit play to 60 seconds
 //// Show countdown? (number or bar?)
