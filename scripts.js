@@ -21,300 +21,301 @@ zzz.batman = [
     {
         name: 'Selina Kyle',
         url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    //////////
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
-    },
-    {
-        name: 'Bruce Wayne',
-        url: 'assets/batman-sqr.jpg'
-    },
-    {
-        name: 'Alfred Pennyworth',
-        url: 'assets/alfred-sqr.jpg'
-    },
-    {
-        name: 'Dick Grayson',
-        url: 'assets/robin-sqr.jpg'
-    },
-    {
-        name: 'Selina Kyle',
-        url: 'assets/catwoman-sqr.jpg'
-    },
-    {
-        name: 'The Joker',
-        url: 'assets/joker-sqr.jpg'
-    },
-    {
-        name: 'Edward Nigma',
-        url: 'assets/riddler-sqr.jpg'
-    },
-    {
-        name: 'Oswald Chesterfield Cobblepot',
-        url: 'assets/penguin-sqr.jpg'
     }
+    // ,
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // //////////
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Bruce Wayne',
+    //     url: 'assets/batman-sqr.jpg'
+    // },
+    // {
+    //     name: 'Alfred Pennyworth',
+    //     url: 'assets/alfred-sqr.jpg'
+    // },
+    // {
+    //     name: 'Dick Grayson',
+    //     url: 'assets/robin-sqr.jpg'
+    // },
+    // {
+    //     name: 'Selina Kyle',
+    //     url: 'assets/catwoman-sqr.jpg'
+    // },
+    // {
+    //     name: 'The Joker',
+    //     url: 'assets/joker-sqr.jpg'
+    // },
+    // {
+    //     name: 'Edward Nigma',
+    //     url: 'assets/riddler-sqr.jpg'
+    // },
+    // {
+    //     name: 'Oswald Chesterfield Cobblepot',
+    //     url: 'assets/penguin-sqr.jpg'
+    // }
 ];
 
 // test array with 9 numbers
@@ -411,8 +412,22 @@ zzz.setCorrectAnswer = function(){
 //
 // OR set wrong answers from a combined array of the current state of the zzz.gameList array concat'd with a zzz.alreadyAnswered array (which still needs to be created) which will be a complete list of the answers except for the correct answer. <-- probably this one?
 zzz.setWrongAnswerOptions = function(){
-    zzz.arrayToArray(zzz.gameList, zzz.answerOptions, 3);
+    
+    const wrongAnswerOptions = []
+    
+    zzz.arrayToArray(zzz.gameList, wrongAnswerOptions, 3);
+
+    wrongAnswerOptions.forEach(element => {
+        
+        // Adds the wrong answer options to zzz.answerOptions
+        zzz.answerOptions.push(element);
+        
+        // Returns the wrong answer options to zzz.gameList
+        zzz.gameList.push(element);
+        
+    });
 }
+
 
 zzz.addCorrectAnswerToAnswerOptions = function(){
     zzz.answerOptions.push(zzz.correctAnswer.slice(0)[0])
