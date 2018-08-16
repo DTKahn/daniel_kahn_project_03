@@ -470,6 +470,8 @@ zzz.buildAnswerButtons = function() {
 
 // Calls all the functions need to display the question
 zzz.buildNew = function(){
+    zzz.showScore();
+    
     zzz.setCorrectAnswer();
 
     // Might move into zzz.setCorrectAnswer or some other answer constructor
@@ -503,6 +505,9 @@ zzz.clearForNext = function(){
 
 };
 
+zzz.showScore = function(){
+    $('.score').text(`Score: ${zzz.score}`);
+};
 
 
 // Take answer from button text and change score
@@ -510,16 +515,13 @@ zzz.buttonClick = function() {
     $('.answers').on('click', 'button', function() {
         
         const $answer = $(this).text();
-        console.log($answer);
         
         // Change score
         if ($answer === zzz.correctAnswer[0].name){
             zzz.score++;
-            console.log(zzz.score);
         }
         else {
             zzz.score--;
-            console.log(zzz.score);
         };
         
         zzz.clearForNext();
