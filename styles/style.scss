@@ -55,7 +55,48 @@ button {
     border-bottom: 2vw solid red;
     border-left: 0px solid red;
     border-right: 0px solid red;
-    border-radius: 13%;
+    border-radius: 11%;
     font-family: 'Patrick Hand SC', cursive;
     font-weight: bold;
+}
+
+.new-game-button {
+    border: 3px solid black;
+    font-family: sans-serif;
+    padding: 20px 40px;
+    margin: 0 auto;
+    display: block;
+    flex-basis: auto;
+    border-radius: 10%;
+}
+
+.end-of-game {
+    margin: 0 auto;
+    background: rgba(233, 233, 233, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+}
+
+.end-of-game-content {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: rgb(60, 60, 60);
+    height: 50vh;
+    flex-wrap: wrap;
+    border-radius: 10%;
+}
+
+.final-score {
+    width: 100%;
+}
+
+.visible {
+    display: flex;
 }

@@ -365,10 +365,13 @@ zzz.countDown = function() {
         
         zzz.timeRemaining--;
         
-        $('.timeRemaining').text(`Time Left: ${zzz.timeRemaining}`)
+        $('.time-remaining').text(`Time Left: ${zzz.timeRemaining}`)
 
         if(zzz.timeRemaining === 0){
             clearInterval(count);
+            
+            $('.final-score').text(`Final Score: ${zzz.score}`);
+            zzz.displayEndOfGame();
         };
     }, 1000);
 };
@@ -559,6 +562,17 @@ zzz.buttonClick = function() {
 //// -1 for every wrong answer
 zzz.score = 0;
 
+zzz.displayEndOfGame = function() {
+    $('.end-of-game').toggleClass('visible');
+}
+
+// Reloads the page
+zzz.startNewGame = function() {
+    $('.new-game-button').on('click', function(){
+        location.reload();
+    });
+}
+
 // Limit play to 60 seconds
 //// Show countdown? (number or bar?)
 
@@ -568,8 +582,10 @@ zzz.init = function() {
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
     zzz.buildNew();
-    
     zzz.buttonClick();
+    
+    // Resets game
+    zzz.startNewGame();
 
 };
 
