@@ -357,6 +357,22 @@ zzz.randomArrayIndex = function(array) {
     return randIndex;
 };
 
+zzz.timeRemaining = 60;
+
+// We're leaving together, But still it's farewell, And maybe we'll come back, To earth, who can tell? I guess there is no one to blame. We're leaving ground (leaving ground). Will things ever be the same again?
+zzz.countDown = function() {
+    const count = setInterval(function () {
+        
+        zzz.timeRemaining--;
+        
+        $('.timeRemaining').text(`Time Left: ${zzz.timeRemaining}`)
+
+        if(zzz.timeRemaining === 0){
+            clearInterval(count);
+        };
+    }, 1000);
+};
+
 // Removes a number of items from a target array
 //// Takes args: 
 ////// removeFromArray, the array from which items are removed
@@ -509,10 +525,14 @@ zzz.showScore = function(){
     $('.score').text(`Score: ${zzz.score}`);
 };
 
+// Keeps track of the number of submitted ansers
+//// Used to start the timer
+zzz.clickCount = 0;
 
 // Take answer from button text and change score
 zzz.buttonClick = function() {
     $('.answers').on('click', 'button', function() {
+        
         
         const $answer = $(this).text();
         
@@ -526,7 +546,11 @@ zzz.buttonClick = function() {
         
         zzz.clearForNext();
         zzz.buildNew();
-
+        if(zzz.clickCount === 0){
+            zzz.countDown();
+        };
+        
+        zzz.clickCount++;
     });    
 }
 
@@ -544,6 +568,7 @@ zzz.init = function() {
     // Sets the list we're using to play the game
     zzz.setGameList(zzz.batman);
     zzz.buildNew();
+    
     zzz.buttonClick();
 
 };
