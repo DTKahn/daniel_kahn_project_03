@@ -60,26 +60,26 @@ zzz.hackerYouDogs = [
 ];
 
 zzz.dogs = [
-    {
-        name: 'Dug',
-        url: 'assets/hackerYouDogs/dog-dug.jpg'
-    },
-    {
-        name: 'Junior',
-        url: 'assets/hackerYouDogs/dog-junior.jpg'
-    },
-    {
-        name: 'Kenzo',
-        url: 'assets/hackerYouDogs/dog-kenzo.jpg'
-    },
-    {
-        name: 'Mika',
-        url: 'assets/hackerYouDogs/dog-mika.jpg'
-    },
-    {
-        name: 'Porkie',
-        url: 'assets/hackerYouDogs/dog-porkie.jpg'
-    },
+    // {
+    //     name: 'Dug',
+    //     url: 'assets/hackerYouDogs/dog-dug.jpg'
+    // },
+    // {
+    //     name: 'Junior',
+    //     url: 'assets/hackerYouDogs/dog-junior.jpg'
+    // },
+    // {
+    //     name: 'Kenzo',
+    //     url: 'assets/hackerYouDogs/dog-kenzo.jpg'
+    // },
+    // {
+    //     name: 'Mika',
+    //     url: 'assets/hackerYouDogs/dog-mika.jpg'
+    // },
+    // {
+    //     name: 'Porkie',
+    //     url: 'assets/hackerYouDogs/dog-porkie.jpg'
+    // },
     {
         name:'Air Buddy',
         url: 'assets/dogs/air-buddy.jpg'
@@ -131,6 +131,10 @@ zzz.dogs = [
     {
         name:'Toto',
         url: 'assets/dogs/toto.jpg'
+    },
+    {
+        name: 'Balto',
+        url: 'assets/dogs/balto.jpg'
     }
 ];
 
@@ -380,9 +384,24 @@ zzz.correctAnswer = [];
 zzz.gameList = [];
 
 zzz.chooseGameList = function(){
-    $('.choose-game-list').on('submit', function(){
+    
+    $('.choose-game-list').on('submit', function(event){
+        event.preventDefault();
+       
+        console.log('form submitted');
 
+        const gameListValue = $('#game-list').find(":selected").val();
+
+        console.log(gameListValue);
+
+        zzz.setGameList(gameListValue);
+        zzz.buildNew();
+        zzz.buttonClick();
+        
+        $('.start-of-game').toggleClass('hidden');
     });
+    
+
 };
 
 // Stop classmates who have already been shown from showing again unless all have been shown
@@ -395,8 +414,12 @@ zzz.moveToAlreadyAnswered = function(){
 }
 
 // Copy array to new array which will be modified during play
-zzz.setGameList = function(originalGamePlayArray){
-    originalGamePlayArray.forEach((item) => {
+zzz.setGameList = function(subjectArray){
+
+    console.log(subjectArray);
+    
+    zzz[subjectArray].forEach((item) => {
+    // subjectArray.forEach((item) => {
         zzz.gameList.push(item);
     });
 }
@@ -471,16 +494,12 @@ zzz.buildNew = function(){
     
     zzz.setCorrectAnswer();
 
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.showHeadshot(zzz.correctAnswer);
 
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.setWrongAnswerOptions();
 
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.addCorrectAnswerToAnswerOptions();
 
-    // Might move into zzz.setCorrectAnswer or some other answer constructor
     zzz.buildAnswerButtons();
 }
 
@@ -557,12 +576,14 @@ zzz.startNewGame = function() {
 zzz.init = function() {
     console.log('And why doesn’t Batman dance anymore? Remember the Batusi?');
     
-    // Sets the list we're using to play the game
-    zzz.setGameList(zzz.dogs);
-    zzz.buildNew();
-    zzz.buttonClick();
+    zzz.chooseGameList();
     
-    // Resets game
+    // Sets the list we're using to play the game
+    // zzz.setGameList(zzz.dogs);
+    // zzz.buildNew();
+    // zzz.buttonClick();
+    
+    // // Resets game
     zzz.startNewGame();
 
 };
@@ -574,12 +595,3 @@ $(function () {
 
 });
 // ^End of Ready, M.D.
-
-/*
-Next steps:
-- clear out arrays like answerOptions
-- rebuild the gameList array when empty
-- store the answered objects in an answered array
-
-- make a timer
-*/
