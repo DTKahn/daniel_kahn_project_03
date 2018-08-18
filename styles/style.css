@@ -135,17 +135,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 html {
   font-size: 62.5%; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
-  background: #3c3c3c; }
+  background: #9f9f9f; }
 
 .wrapper {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto; }
-
-h2 {
-  color: white;
-  font-size: 3rem; }
 
 img {
   width: 100%;
@@ -153,131 +153,178 @@ img {
   -o-object-fit: cover;
   object-fit: cover; }
 
-h2 {
+h1 {
+  color: white;
   text-align: center; }
 
-.headshot {
-  width: 32vw;
-  height: 35vw;
+h1.big {
+  font-size: 15rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 3vh; }
+
+h1.small {
+  font-size: 8rem;
+  padding-bottom: 3vh; }
+
+.start-of-game {
   margin: 0 auto;
-  border-top: 1vw solid white;
-  border-left: 1vw solid white;
-  border-right: 1vw solid white;
-  border-bottom: 4vw solid white; }
+  background: #9f9f9f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.start-of-game-inner {
+  background: #b40000;
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  border-radius: 7vw; }
+
+.form-content {
+  background: white;
+  width: 100%;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.game-list-label {
+  width: 100%;
+  text-align: center;
+  font-size: 8rem;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: bold; }
+
+.game-list {
+  font-size: 3rem;
+  font-family: 'Patrick Hand SC', cursive;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  width: 50%;
+  height: 70px;
+  margin-top: 10px; }
+
+.start-game-button {
+  width: 50%;
+  font-size: 3rem;
+  margin: 65px auto;
+  text-align: center;
+  display: block;
+  border: none;
+  border-radius: 1vw;
+  height: 70px; }
+
+.headshot {
+  width: 50vh;
+  max-width: 90vw;
+  height: 50vh;
+  margin: 0 auto;
+  border-top: 1vh solid white;
+  border-left: 1vh solid white;
+  border-right: 1vh solid white;
+  border-bottom: 1vh solid white; }
+
+.header {
+  background: #b40000;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  padding: 2vh 0; }
+
+.header-top {
+  text-transform: uppercase;
+  font-size: 3rem; }
+
+.header-bottom {
+  font-size: 1.5rem; }
+
+.game-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 50vh;
+  max-width: 90vw;
+  background: white;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin-bottom: 3vh; }
 
 .answers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 40px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-button {
-  -ms-flex-preferred-size: 21vw;
-  flex-basis: 21vw;
-  min-width: 100px;
-  min-height: 18vw;
-  font-size: 2.5rem;
+.answer-button {
+  background: #b40000;
+  border: none;
+  border-radius: 1vw;
+  padding: 0 0 20px 0;
+  width: 23%; }
+
+h3 {
+  color: white;
+  line-height: 1; }
+
+.top {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-top: 10px; }
+
+.bottom {
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 10px; }
+
+.button-content {
   background: white;
-  border-top: 6vw solid red;
-  border-bottom: 2vw solid red;
-  border-left: 0px solid red;
-  border-right: 0px solid red;
-  border-radius: 11%;
-  font-family: 'Patrick Hand SC', cursive;
-  font-weight: bold; }
-
-.new-game-button {
-  border: 3px solid black;
-  font-family: sans-serif;
-  padding: 20px 40px;
-  margin: 0 auto;
-  display: block;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  border-radius: 10%; }
-
-.end-of-game {
-  margin: 0 auto;
-  background: rgba(233, 233, 233, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.end-of-game-content {
-  margin: 0 auto;
+  height: 110px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  background: #3c3c3c;
-  height: 50vh;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-radius: 10%; }
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Patrick Hand SC', cursive;
+  line-height: 1; }
 
-.final-score {
-  width: 100%; }
+.hidden {
+  display: none; }
 
 .visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.choose-game-list {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  background: #3c3c3c;
-  height: 80vh;
-  width: 80vw;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  border-radius: 10%; }
-
-form button {
-  margin-top: 20px;
-  border: 3px solid black; }
-
-#game-list {
-  font-size: 3rem; }
-
-.start-of-game {
-  margin: 0 auto;
-  background: rgba(233, 233, 233, 0.7);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.hidden {
-  display: none; }

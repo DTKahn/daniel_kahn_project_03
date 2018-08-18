@@ -6,46 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>HI! My name is</title>
+    <title>HELLO my name is</title>
 </head>
 <body>
-    <div class="wrapper">
-        <h2 class="score"></h2>
-        <h2>Hi! My name is</h2>
-        <h2 class="time-remaining">Time Left: 60</h2>
-        <div class="headshot">
-
-        </div>
-        
-        <div class="answers">
-            
-        </div>
-
-        <div class="end-of-game">
-            <div class="end-of-game-content">
-                <h2 class="final-score">Final Score: 32</h2> 
-                <!-- Text will be replaced by jQuery - content for layout purposes -->
-                
-                <button class="new-game-button">New Game</button>
-                <!-- resets game for another round (theoretically...)-->
-            </div>
-            
-        </div>
-
-        <div class="start-of-game">
+    
+    
+    <div class="start-of-game">
+        <div class="start-of-game-inner">
+            <h1 class="big">Hello</h1>
+            <h1 class="small">my name is</h1>
             <form class="choose-game-list">
-                <select id="game-list">
-                    <option value="hackerYouCohort19">Cohort 19</option>
-                    <option value="hackerYouDogs">HackerYou Dogs</option>
-                    <option value="dogs">Famous Dogs</option>
-                    <option value="batman">60s Batman</option>
-                </select>
-                <button>Start Game!</button>
+                <div class="form-content">
+                    <div class="game-list-label">
+                        <label for="game-list">Select Topic</label>
+                    </div>
+                    <select id="game-list" class="game-list">
+                        <option value="dogs">Dogs</option>
+                        <option value="hackerYouDogs">HackerYou Dogs</option>
+                        <option value="hackerYouCohort19">Cohort 19</option>
+                        <option value="batman">Batman - 60s</option>
+                    </select>
+                </div>
+                <button class="start-game-button">Start Game!</button>
             </form>
         </div>
-
-    </div> <!-- end of wrapper -->
+    </div>
     
+    <div class="header">
+        <h2 class="header-top">Hello</h2>
+        <h2 class="header-bottom">my name is</h2>
+    </div>
+    <div class="wrapper">
+        
+        <div class="headshot">
+            
+        </div>
+        
+        <div class="game-info">
+            <h2 class="time-remaining">Time Left: 60</h2>
+            <h2 class="score"></h2>
+        </div>
+
+        <div class="answers">
+            
+        </div> 
+        <!-- end of answers div-->
+
+    </div> 
+    <!-- end of wrapper -->
+    
+    <div class="end-of-game">
+        <div class="end-of-game-content">
+            <h2 class="final-score">Final Score: 0</h2> 
+            <!-- Text will be replaced by jQuery - content for layout purposes -->
+            
+            <button class="new-game-button">New Game</button>
+            <!-- resets game for another round (theoretically...)-->
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>

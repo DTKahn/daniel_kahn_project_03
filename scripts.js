@@ -33,6 +33,22 @@ zzz.batman = [
     {
         name: 'Oswald Chesterfield Cobblepot',
         url: 'assets/batman/penguin-sqr.jpg'
+    },
+    {
+        name: 'Barbara Gordon',
+        url: 'assets/batman/barbaraGordon.jpg'
+    },
+    {
+        name: 'James Gordon',
+        url: 'assets/batman/JamesGordon.jpg'
+    },
+    {
+        name: 'William McElroy',
+        url: 'assets/batman/williamMcElroy.jpg'
+    },
+    {
+        name: 'Jervis Tetch',
+        url: 'assets/batman/JervisTetch.jpg'
     }
 ];
 
@@ -60,26 +76,26 @@ zzz.hackerYouDogs = [
 ];
 
 zzz.dogs = [
-    // {
-    //     name: 'Dug',
-    //     url: 'assets/hackerYouDogs/dog-dug.jpg'
-    // },
-    // {
-    //     name: 'Junior',
-    //     url: 'assets/hackerYouDogs/dog-junior.jpg'
-    // },
-    // {
-    //     name: 'Kenzo',
-    //     url: 'assets/hackerYouDogs/dog-kenzo.jpg'
-    // },
-    // {
-    //     name: 'Mika',
-    //     url: 'assets/hackerYouDogs/dog-mika.jpg'
-    // },
-    // {
-    //     name: 'Porkie',
-    //     url: 'assets/hackerYouDogs/dog-porkie.jpg'
-    // },
+    {
+        name: 'Dug',
+        url: 'assets/hackerYouDogs/dog-dug.jpg'
+    },
+    {
+        name: 'Junior',
+        url: 'assets/hackerYouDogs/dog-junior.jpg'
+    },
+    {
+        name: 'Kenzo',
+        url: 'assets/hackerYouDogs/dog-kenzo.jpg'
+    },
+    {
+        name: 'Mika',
+        url: 'assets/hackerYouDogs/dog-mika.jpg'
+    },
+    {
+        name: 'Porkie',
+        url: 'assets/hackerYouDogs/dog-porkie.jpg'
+    },
     {
         name:'Air Buddy',
         url: 'assets/dogs/air-buddy.jpg'
@@ -135,6 +151,86 @@ zzz.dogs = [
     {
         name: 'Balto',
         url: 'assets/dogs/balto.jpg'
+    },
+    {
+        name: 'Mr. Peanutbutter',
+        url: 'assets/dogs/mrPeanutbutter.jpg'
+    },
+    {
+        name: 'Seymour',
+        url: 'assets/dogs/seymour.jpg'
+    },
+    {
+        name: 'Poochie',
+        url: 'assets/dogs/poochie.jpg'
+    },
+    {
+        name: 'Jake',
+        url: 'assets/dogs/jakeTheDog.jpg'
+    },
+    {
+        name: 'Mr. Peabody',
+        url: 'assets/dogs/mrPeabody.jpg'
+    },
+    {
+        name: 'Snuffles A.K.A. Snowball',
+        url: 'assets/dogs/snufflesAkaSnowball.jpg'
+    },
+    {
+        name: 'Underdog',
+        url: 'assets/dogs/underdog.jpg'
+    },
+    {
+        name: 'Dogbert',
+        url: 'assets/dogs/dogbert.jpg'
+    },
+    {
+        name: 'Goofy',
+        url: 'assets/dogs/goofy.jpg'
+    },
+    {
+        name: 'Santa\'s Little Helper',
+        url: 'assets/dogs/santasLittleHelper.jpg'
+    },
+    {
+        name: 'Scooby',
+        url: 'assets/dogs/scooby.jpg'
+    },
+    {
+        name: 'Brian',
+        url: 'assets/dogs/brian.jpg'
+    },
+    {
+        name: 'Snoopy',
+        url: 'assets/dogs/snoopy.jpg'
+    },
+    {
+        name: 'Odie',
+        url: 'assets/dogs/odie.jpg'
+    },
+    {
+        name: 'Pluto',
+        url: 'assets/dogs/pluto.jpg'
+    },
+    {
+        name: 'Lady',
+        url: 'assets/dogs/lady.jpg'
+    },
+    {
+        name: 'Tramp',
+        url: 'assets/dogs/tramp.jpg'
+    },
+    {
+        name: 'Blue',
+        url: 'assets/dogs/blue.jpg'
+    },
+    {
+        name: 'Slinky',
+        url: 'assets/dogs/slinky.jpg'
+    },
+    {
+        name: 'Dug',
+        url: 'assets/dogs/dug-up.jpg'
     }
 ];
 
@@ -248,7 +344,7 @@ zzz.hackerYouCohort19 = [
         url: 'assets/cohort-19/phil-bourassa.jpg'
     },
     {
-        name: 'Patrik',
+        name: 'Pratik',
         url: 'assets/cohort-19/pratik-gauchan.jpg'
     },
     {
@@ -482,7 +578,13 @@ zzz.buildAnswerButtons = function() {
     
     shuffled.forEach(item => {
         
-        const $button = $('<button>').text(item.name);
+        const $button = `
+                        <button class="answer-button">
+                            <h3 class="top">Hello</h3>
+                            <h3 class="bottom">my name is</h3>
+                            <div class="button-content">${item.name}</div>
+                        </button>
+                        `;
         
         $('.answers').append($button);
     });
@@ -534,7 +636,7 @@ zzz.buttonClick = function() {
     $('.answers').on('click', 'button', function() {
         
         
-        const $answer = $(this).text();
+        const $answer = $(this).find('.button-content').text();
         
         // Change score
         if ($answer === zzz.correctAnswer[0].name){
