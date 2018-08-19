@@ -363,7 +363,7 @@ h1 {
   background: #b40000;
   border: none;
   border-radius: 1vw;
-  padding: 0 0 2vh 0;
+  padding: 0 0 1.5vh 0;
   width: 23%; }
 
 h3 {
@@ -434,7 +434,7 @@ h3 {
     font-size: 1.5rem; }
   .answer-button {
     width: 48%;
-    margin-bottom: 2vh; }
+    margin-bottom: 1vh; }
   .button-content {
     font-size: 2.5rem;
     height: 9vh; }
