@@ -10,7 +10,7 @@ html {
 
 .wrapper {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -88,12 +88,6 @@ h1 {
     align-items: center;
 }
 
-.game-topic {
-    font-family: $hand;
-    font-size: 7rem;
-    text-align: center;
-}
-
 .final-score-content {
     display: flex;
 }
@@ -101,6 +95,7 @@ h1 {
 .final-score-style {
     font-size: 7rem;
     font-family: $hand;
+    text-align: center;
 }
 
 .form-content {
@@ -131,8 +126,7 @@ h1 {
     border-radius: 1vw;
 }
 
-.new-game-button,
-.start-game-button {
+.game-button {
     width: 50%;
     font-size: 3rem;
     text-align: center;
@@ -143,9 +137,13 @@ h1 {
     background: white;
 }
 
+.game-info,
 .headshot {
-    width: 50vh;
+    width: 51vh;
     max-width: 90vw;
+}
+
+.headshot {
     height: 50vh;
     margin: 0 auto;
     border-top: 1vh solid white;
@@ -155,10 +153,13 @@ h1 {
 
 .header {
     background: rgb(180, 0, 0);
-    margin-bottom: 20px;
     color: white;
     text-align: center;
-    padding: 2vh 0;
+    height: 10vh;
+    margin-bottom: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-top {
@@ -172,16 +173,14 @@ h1 {
 
 .game-info {
     display: flex;
-    // margin: 0 auto;
-    width: 50vh;
-    max-width: 90vw;
+    height: 7vh;
     justify-content: space-evenly;
     font-size: 2rem;
-    margin: 0 auto 2vh auto;
+    margin: 0 auto 3.5vh auto;
     background: white;
+    align-items: center;
     
     & h2{
-        padding: 10px;
         text-align: center;
     }
 }
@@ -189,13 +188,14 @@ h1 {
 .answers {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .answer-button {
     background: rgb(180, 0, 0);
     border: none;
     border-radius: 1vw;
-    padding: 0 0 20px 0;
+    padding: 0 0 2vh 0;
     width: 23%;
 }
 
@@ -206,23 +206,27 @@ h3 {
 
 .top {
     font-size: 2rem;
-    text-transform: uppercase;
-    padding-top: 10px;
+    text-transform: uppercase;   
 }
 .bottom {
     font-size: 1.05rem;
     position: relative;
-    padding-bottom: 10px;
+}
+.answer-button-title{
+    height: 6.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .button-content {
     background: white;
-    height: 110px;
+    height: 15vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: $hand;
     line-height: 1;
 }
@@ -241,3 +245,302 @@ h3 {
 ///////////////////
 ///////////////////
 
+////////////////////////
+//    START 1000px    //
+////////////////////////
+@media (max-width: 1000px){
+    .button-content {
+        font-size: 1.65rem;
+    }
+}
+////////////////////////
+//     END 1000px     //
+////////////////////////
+
+/////////////////////////
+//     START 800px     //
+/////////////////////////
+@media (max-width: 800px){
+    .headshot,
+    .game-info {
+        width: 36vh;
+    }
+    
+    .headshot {
+        height: 35vh;
+    }
+
+    .game-info {
+        font-size: 1.5rem;
+    }
+    
+    .answer-button {
+        width: 48%;
+        margin-bottom: 2vh;
+    }
+    
+    .button-content {
+        font-size: 2.5rem;
+    }
+
+    .top {
+        font-size: 1.5rem;
+    }
+
+    .bottom {
+        font-size: 0.8rem;
+    }
+
+    .answer-button-title {
+        height: 5vh;
+    }
+
+    .button-content {
+        height: 11vh;
+    }
+}
+/////////////////////////
+//      END 800px      //
+/////////////////////////
+
+/////////////////////////
+//     START 700px     //
+/////////////////////////
+@media (max-width: 700px){
+    .button-content {
+        font-size: 2rem;
+    }
+
+    .big {
+        font-size: 10rem;
+    }
+
+    .small {
+        font-size: 5.3rem;
+    }
+
+    .game-list-label {
+        font-size: 6rem;
+    }
+
+    .final-score-style {
+        font-size: 6rem;
+    }
+}
+/////////////////////////
+//      END 700px      //
+/////////////////////////
+
+/////////////////////////
+//     START 500px     //
+/////////////////////////
+@media (max-width: 500px){
+    .button-content {
+        font-size: 1.65rem;
+    }
+
+    .game-list-label {
+        font-size: 5rem;
+    }
+
+    .final-score-style {
+        font-size: 4.5rem;
+    }
+}
+/////////////////////////
+//      END 500px      //
+/////////////////////////
+
+/////////////////////////
+//     START 400px     //
+/////////////////////////
+@media (max-width: 400px){
+    .button-content {
+        font-size: 1.5rem;
+    }
+    
+    .final-score-style {
+        font-size: 3rem;
+    }
+    
+    .game-button {
+        font-size: 2rem;
+    }
+    
+    .game-list-label {
+        font-size: 4rem;
+    }
+    
+    .game-list {
+        font-size: 2rem;
+        padding: 10px;
+        width: 70%;
+        margin-top: 20px;
+    }
+    
+    .big {
+        font-size: 8rem;
+    }
+    
+    .small {
+        font-size: 4.25rem;
+    }
+}
+/////////////////////////
+//      END 400px      //
+/////////////////////////
+
+/////////////////////////
+//     START 350px     //
+// Testing up to 320px //
+//      iPhone SE      //
+/////////////////////////
+@media (max-width: 350px) {
+
+
+    .button-content {
+        font-size: 1.3rem;
+    }
+}
+/////////////////////////
+//      END 350px      //
+// Testing up to 320px //
+/////////////////////////
+
+/////////////////////////
+/////////////////////////
+//      LANDSCAPE      //
+/////////////////////////
+/////////////////////////
+
+/////////////////////////
+//     START 600px     //
+/////////////////////////
+@media (max-height: 600px) and (min-width: 600px){
+    .big {
+        font-size: 12rem;
+
+    }
+
+    .small {
+        font-size: 6.4rem;
+
+    }
+
+    .final-score-style {
+        font-size: 5rem;
+    }
+}
+/////////////////////////
+//      END 600px      //
+/////////////////////////
+
+/////////////////////////
+//     START 500px     //
+/////////////////////////
+@media (max-height: 500px) and (min-width: 500px){
+    .wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header {
+        height: 18vh;
+        margin-bottom: 0;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 82vh;
+    }
+
+    .left-flex {
+        width: 28%;
+    }
+
+    .answers {
+        width: 65%;
+    }
+
+    .headshot,
+    .game-info {
+        width: 100%;
+    }
+
+    .headshot {
+        height: 28vw;
+    }
+
+    .game-info {
+        height: 20vh;
+    }
+
+    .answer-button-title {
+        height: 12vh;
+
+    }
+
+    .button-content {
+        height: 22vh;
+        font-size: 1.6rem;
+
+    }
+
+}
+/////////////////////////
+//      END 500px      //
+/////////////////////////
+
+
+/////////////////////////
+//     START 450px     //
+/////////////////////////
+@media (max-height: 450px) and (min-width: 450px){
+    .big {
+        font-size: 8rem;
+    }
+
+    .small {
+        font-size: 4.25rem;
+    }
+
+    .game-list-label {
+        font-size: 4rem;
+    }
+
+    .game-list {
+        padding: 0;
+        height: 12vh;
+        font-size: 2rem;
+    }
+
+    .game-button {
+        height: 12vh;
+    }
+
+    .final-score-style {
+        font-size: 3rem;
+    }
+}
+/////////////////////////
+//      END 450px      //
+/////////////////////////
+
+/////////////////////////
+//     START 400px     //
+/////////////////////////
+@media (max-height: 400px) and (min-width: 400px){
+    .big {
+        font-size: 6rem;
+    }
+
+    .small {
+        font-size: 3.2rem;
+    }
+
+}
+/////////////////////////
+//      END 400px      //
+/////////////////////////

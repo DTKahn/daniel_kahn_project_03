@@ -76,26 +76,26 @@ zzz.hackerYouDogs = [
 ];
 
 zzz.dogs = [
-    {
-        name: 'Dug',
-        url: 'assets/hackerYouDogs/dog-dug.jpg'
-    },
-    {
-        name: 'Junior',
-        url: 'assets/hackerYouDogs/dog-junior.jpg'
-    },
-    {
-        name: 'Kenzo',
-        url: 'assets/hackerYouDogs/dog-kenzo.jpg'
-    },
-    {
-        name: 'Mika',
-        url: 'assets/hackerYouDogs/dog-mika.jpg'
-    },
-    {
-        name: 'Porkie',
-        url: 'assets/hackerYouDogs/dog-porkie.jpg'
-    },
+    // {
+    //     name: 'Dug',
+    //     url: 'assets/hackerYouDogs/dog-dug.jpg'
+    // },
+    // {
+    //     name: 'Junior',
+    //     url: 'assets/hackerYouDogs/dog-junior.jpg'
+    // },
+    // {
+    //     name: 'Kenzo',
+    //     url: 'assets/hackerYouDogs/dog-kenzo.jpg'
+    // },
+    // {
+    //     name: 'Mika',
+    //     url: 'assets/hackerYouDogs/dog-mika.jpg'
+    // },
+    // {
+    //     name: 'Porkie',
+    //     url: 'assets/hackerYouDogs/dog-porkie.jpg'
+    // },
     {
         name:'Air Buddy',
         url: 'assets/dogs/air-buddy.jpg'
@@ -104,134 +104,134 @@ zzz.dogs = [
         name:'Beethoven',
         url: 'assets/dogs/beethoven.jpg'
     },
+    // {
+    //     name:'Bo',
+    //     url: 'assets/dogs/bo.jpg'
+    // },
+    // {
+    //     name:'Chance',
+    //     url: 'assets/dogs/chance.jpg'
+    // },
+    // {
+    //     name:'Chloe',
+    //     url: 'assets/dogs/chloe.jpg'
+    // },
+    // {
+    //     name:'Eddie',
+    //     url: 'assets/dogs/eddie.jpg'
+    // },
+    // {
+    //     name:'Hooch',
+    //     url: 'assets/dogs/hooch.jpg'
+    // },
+    // {
+    //     name:'Laika',
+    //     url: 'assets/dogs/laika.jpg'
+    // },
+    // {
+    //     name:'Lassie',
+    //     url: 'assets/dogs/lassie.jpg'
+    // },
+    // {
+    //     name:'Marley',
+    //     url: 'assets/dogs/marley.jpg'
+    // },
+    // {
+    //     name:'Shadow',
+    //     url: 'assets/dogs/shadow.jpg'
+    // },
+    // {
+    //     name:'Sunny',
+    //     url: 'assets/dogs/sunny.jpg'
+    // },
+    // {
+    //     name:'Toto',
+    //     url: 'assets/dogs/toto.jpg'
+    // },
+    // {
+    //     name: 'Balto',
+    //     url: 'assets/dogs/balto.jpg'
+    // },
     {
-        name:'Bo',
-        url: 'assets/dogs/bo.jpg'
-    },
-    {
-        name:'Chance',
-        url: 'assets/dogs/chance.jpg'
-    },
-    {
-        name:'Chloe',
-        url: 'assets/dogs/chloe.jpg'
-    },
-    {
-        name:'Eddie',
-        url: 'assets/dogs/eddie.jpg'
-    },
-    {
-        name:'Hooch',
-        url: 'assets/dogs/hooch.jpg'
-    },
-    {
-        name:'Laika',
-        url: 'assets/dogs/laika.jpg'
-    },
-    {
-        name:'Lassie',
-        url: 'assets/dogs/lassie.jpg'
-    },
-    {
-        name:'Marley',
-        url: 'assets/dogs/marley.jpg'
-    },
-    {
-        name:'Shadow',
-        url: 'assets/dogs/shadow.jpg'
-    },
-    {
-        name:'Sunny',
-        url: 'assets/dogs/sunny.jpg'
-    },
-    {
-        name:'Toto',
-        url: 'assets/dogs/toto.jpg'
-    },
-    {
-        name: 'Balto',
-        url: 'assets/dogs/balto.jpg'
-    },
-    {
-        name: 'Mr. Peanutbutter',
+        name: 'Mr. Peanutbutter Nahasapeemapetilon',
         url: 'assets/dogs/mrPeanutbutter.jpg'
     },
-    {
-        name: 'Seymour',
-        url: 'assets/dogs/seymour.jpg'
-    },
-    {
-        name: 'Poochie',
-        url: 'assets/dogs/poochie.jpg'
-    },
-    {
-        name: 'Jake',
-        url: 'assets/dogs/jakeTheDog.jpg'
-    },
-    {
-        name: 'Mr. Peabody',
-        url: 'assets/dogs/mrPeabody.jpg'
-    },
+    // {
+    //     name: 'Seymour',
+    //     url: 'assets/dogs/seymour.jpg'
+    // },
+    // {
+    //     name: 'Poochie',
+    //     url: 'assets/dogs/poochie.jpg'
+    // },
+    // {
+    //     name: 'Jake',
+    //     url: 'assets/dogs/jakeTheDog.jpg'
+    // },
+    // {
+    //     name: 'Mr. Peabody',
+    //     url: 'assets/dogs/mrPeabody.jpg'
+    // },
     {
         name: 'Snuffles A.K.A. Snowball',
         url: 'assets/dogs/snufflesAkaSnowball.jpg'
     },
-    {
-        name: 'Underdog',
-        url: 'assets/dogs/underdog.jpg'
-    },
-    {
-        name: 'Dogbert',
-        url: 'assets/dogs/dogbert.jpg'
-    },
-    {
-        name: 'Goofy',
-        url: 'assets/dogs/goofy.jpg'
-    },
-    {
-        name: 'Santa\'s Little Helper',
-        url: 'assets/dogs/santasLittleHelper.jpg'
-    },
-    {
-        name: 'Scooby',
-        url: 'assets/dogs/scooby.jpg'
-    },
-    {
-        name: 'Brian',
-        url: 'assets/dogs/brian.jpg'
-    },
-    {
-        name: 'Snoopy',
-        url: 'assets/dogs/snoopy.jpg'
-    },
-    {
-        name: 'Odie',
-        url: 'assets/dogs/odie.jpg'
-    },
-    {
-        name: 'Pluto',
-        url: 'assets/dogs/pluto.jpg'
-    },
-    {
-        name: 'Lady',
-        url: 'assets/dogs/lady.jpg'
-    },
-    {
-        name: 'Tramp',
-        url: 'assets/dogs/tramp.jpg'
-    },
-    {
-        name: 'Blue',
-        url: 'assets/dogs/blue.jpg'
-    },
-    {
-        name: 'Slinky',
-        url: 'assets/dogs/slinky.jpg'
-    },
-    {
-        name: 'Dug',
-        url: 'assets/dogs/dug-up.jpg'
-    }
+    // {
+    //     name: 'Underdog',
+    //     url: 'assets/dogs/underdog.jpg'
+    // },
+    // {
+    //     name: 'Dogbert',
+    //     url: 'assets/dogs/dogbert.jpg'
+    // },
+    // {
+    //     name: 'Goofy',
+    //     url: 'assets/dogs/goofy.jpg'
+    // },
+    // {
+    //     name: 'Santa\'s Little Helper',
+    //     url: 'assets/dogs/santasLittleHelper.jpg'
+    // },
+    // {
+    //     name: 'Scooby',
+    //     url: 'assets/dogs/scooby.jpg'
+    // },
+    // {
+    //     name: 'Brian',
+    //     url: 'assets/dogs/brian.jpg'
+    // },
+    // {
+    //     name: 'Snoopy',
+    //     url: 'assets/dogs/snoopy.jpg'
+    // },
+    // {
+    //     name: 'Odie',
+    //     url: 'assets/dogs/odie.jpg'
+    // },
+    // {
+    //     name: 'Pluto',
+    //     url: 'assets/dogs/pluto.jpg'
+    // },
+    // {
+    //     name: 'Lady',
+    //     url: 'assets/dogs/lady.jpg'
+    // },
+    // {
+    //     name: 'Tramp',
+    //     url: 'assets/dogs/tramp.jpg'
+    // },
+    // {
+    //     name: 'Blue',
+    //     url: 'assets/dogs/blue.jpg'
+    // },
+    // {
+    //     name: 'Slinky',
+    //     url: 'assets/dogs/slinky.jpg'
+    // },
+    // {
+    //     name: 'Dug',
+    //     url: 'assets/dogs/dug-up.jpg'
+    // }
 ];
 
 zzz.hackerYouCohort19 = [
@@ -581,8 +581,10 @@ zzz.buildAnswerButtons = function() {
         
         const $button = `
                         <button class="answer-button">
-                            <h3 class="top">Hello</h3>
-                            <h3 class="bottom">my name is</h3>
+                            <div class="answer-button-title">
+                                <h3 class="top">Hello</h3>
+                                <h3 class="bottom">my name is</h3>
+                            </div>
                             <div class="button-content">${item.name}</div>
                         </button>
                         `;
@@ -663,12 +665,9 @@ zzz.buttonClick = function() {
 zzz.score = 0;
 
 zzz.displayEndOfGame = function() {
-    // $('.end-of-game').toggleClass('visible');
+    
     $('.cover-game').toggleClass('hidden');
-    // $('.choose-game-list').toggleClass('hidden');
     $('.hide-show-at-end').toggleClass('hidden');
-    // $('.cover-game-middle').toggleClass('hidden');
-    // $('.cover-game-bottom').toggleClass('hidden');
 }
 
 // Reloads the page
