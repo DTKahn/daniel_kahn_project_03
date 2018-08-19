@@ -145,7 +145,7 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1800px;
   margin: 0 auto; }
 
 img {
@@ -313,7 +313,7 @@ h1 {
   color: white;
   text-align: center;
   height: 10vh;
-  margin-bottom: 3.5vh;
+  margin-bottom: 2vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,7 +341,7 @@ h1 {
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   font-size: 2rem;
-  margin: 0 auto 3.5vh auto;
+  margin: 0 auto 2vh auto;
   background: white;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -416,6 +416,10 @@ h3 {
   display: -ms-flexbox;
   display: flex; }
 
+@media (min-width: 1400px) {
+  .button-content {
+    font-size: 2.8rem; } }
+
 @media (max-width: 1000px) {
   .button-content {
     font-size: 1.65rem; } }
@@ -432,15 +436,14 @@ h3 {
     width: 48%;
     margin-bottom: 2vh; }
   .button-content {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    height: 9vh; }
   .top {
     font-size: 1.5rem; }
   .bottom {
     font-size: 0.8rem; }
   .answer-button-title {
-    height: 5vh; }
-  .button-content {
-    height: 11vh; } }
+    height: 5vh; } }
 
 @media (max-width: 700px) {
   .button-content {

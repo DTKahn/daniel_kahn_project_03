@@ -10,7 +10,7 @@ html {
 
 .wrapper {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@ h1 {
     color: white;
     text-align: center;
     height: 10vh;
-    margin-bottom: 3.5vh;
+    margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +176,7 @@ h1 {
     height: 7vh;
     justify-content: space-evenly;
     font-size: 2rem;
-    margin: 0 auto 3.5vh auto;
+    margin: 0 auto 2vh auto;
     background: white;
     align-items: center;
     
@@ -248,6 +248,20 @@ h3 {
 ////////////////////////
 //    START 1000px    //
 ////////////////////////
+
+@media (min-width: 1400px){
+    .button-content {
+        font-size: 2.8rem;
+    }
+}
+
+////////////////////////
+//    START 1000px    //
+////////////////////////
+
+////////////////////////
+//    START 1000px    //
+////////////////////////
 @media (max-width: 1000px){
     .button-content {
         font-size: 1.65rem;
@@ -281,6 +295,7 @@ h3 {
     
     .button-content {
         font-size: 2.5rem;
+        height: 9vh;
     }
 
     .top {
@@ -293,10 +308,6 @@ h3 {
 
     .answer-button-title {
         height: 5vh;
-    }
-
-    .button-content {
-        height: 11vh;
     }
 }
 /////////////////////////
