@@ -156,7 +156,8 @@ img {
 
 h1 {
   color: white;
-  text-align: center; }
+  text-align: center;
+  line-height: 1; }
 
 .big {
   font-size: 15rem;
@@ -168,24 +169,6 @@ h1 {
   font-size: 8rem;
   color: white;
   text-align: center; }
-
-.start-of-game {
-  margin: 0 auto;
-  background: #9f9f9f;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
 
 .cover-game {
   margin: 0 auto;
@@ -203,7 +186,8 @@ h1 {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  z-index: 10; }
 
 .cover-game-inner {
   background: #b40000;
@@ -220,12 +204,31 @@ h1 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .cover-game-middle,
 .form-content {
   background: white;
-  height: 40vh; }
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .cover-game-bottom,
 .form-bottom {
@@ -240,16 +243,19 @@ h1 {
   -ms-flex-align: center;
   align-items: center; }
 
-.final-score {
-  font-size: 20rem;
-  font-family: "Permanent Marker", cursive; }
+.game-topic {
+  font-family: "Permanent Marker", cursive;
+  font-size: 7rem;
+  text-align: center; }
 
-.start-of-game-inner {
-  background: #b40000;
-  width: 90%;
-  max-width: 1000px;
-  height: 90vh;
-  border-radius: 7vw; }
+.final-score-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.final-score-style {
+  font-size: 7rem;
+  font-family: "Permanent Marker", cursive; }
 
 .form-content {
   width: 100%;
@@ -280,7 +286,9 @@ h1 {
   padding: 15px;
   width: 50%;
   height: 70px;
-  margin-top: 10px; }
+  background: white;
+  border: 1px solid black;
+  border-radius: 1vw; }
 
 .new-game-button,
 .start-game-button {
@@ -300,12 +308,11 @@ h1 {
   margin: 0 auto;
   border-top: 1vh solid white;
   border-left: 1vh solid white;
-  border-right: 1vh solid white;
-  border-bottom: 1vh solid white; }
+  border-right: 1vh solid white; }
 
 .header {
   background: #b40000;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: white;
   text-align: center;
   padding: 2vh 0; }
@@ -321,15 +328,17 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   width: 50vh;
   max-width: 90vw;
-  background: white;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   font-size: 2rem;
-  margin-bottom: 3vh; }
+  margin: 0 auto 2vh auto;
+  background: white; }
+  .game-info h2 {
+    padding: 10px;
+    text-align: center; }
 
 .answers {
   display: -webkit-box;
@@ -373,34 +382,9 @@ h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: "Permanent Marker", cursive;
   line-height: 1; }
-
-.end-of-game {
-  margin: 0 auto;
-  background: #9f9f9f;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.end-of-game-content {
-  background: #b40000;
-  width: 90%;
-  max-width: 1000px;
-  height: 90vh;
-  border-radius: 7vw; }
 
 .hidden {
   display: none; }
