@@ -2,31 +2,37 @@
 
 // Colors
 
-$fontPrimary       : #1d1d1d;
-$askQuestionGrey   : #1d1c1c; // askQuestion
-$teamHover         : rgba(29, 29, 29, 0.8); // hover BG
-$fontGrey          : #5d5e5d; // welcome paragraph
-$servicesBGNumbers : rgba(229, 227, 227, 0.5); // BG numbers
-$socialGrey        : #848484; // footer social icons
-$chevronGrey       : #cacecf; // chevrons
-$testimonials      : #d2d7d8; // testimonials p
-$projectGrey       : #e6e2e2; // project h and p
-$teamText          : #eeeded;
-$testHeader        : #dfdede; // testimonials header
-$fontLightGrey     : #efeeee; // button text
-$bgGrey            : #f1f3f3; // whyChoose, ourTeam
-$darkBlue          : #0e5f88; // button bg, header span
-$bgBlue            : #8ecceb; // services border and bg
+// $fontPrimary       : #1d1d1d;
+// $askQuestionGrey   : #1d1c1c; // askQuestion
+// $teamHover         : rgba(29, 29, 29, 0.8); // hover BG
+// $fontGrey          : #5d5e5d; // welcome paragraph
+// $servicesBGNumbers : rgba(229, 227, 227, 0.5); // BG numbers
+// $socialGrey        : #848484; // footer social icons
+// $chevronGrey       : #cacecf; // chevrons
+// $testimonials      : #d2d7d8; // testimonials p
+// $projectGrey       : #e6e2e2; // project h and p
+// $teamText          : #eeeded;
+// $testHeader        : #dfdede; // testimonials header
+// $fontLightGrey     : #efeeee; // button text
+// $bgGrey            : #f1f3f3; // whyChoose, ourTeam
+// $darkBlue          : #0e5f88; // button bg, header span
+// $bgBlue            : #8ecceb; // services border and bg
 
-// Fonts
-$mont       :'Montserrat', sans-serif;
-$open       :'Open Sans', sans-serif;
+// // Fonts
+// $mont       :'Montserrat', sans-serif;
+// $open       :'Open Sans', sans-serif;
 
-$fullScreen : 1680px; // Will still be full screen width on 15" MBPs but will constrain after that
+// $fullScreen : 1680px; // Will still be full screen width on 15" MBPs but will constrain after that
 
-@mixin headerStyles($color) { 
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 4.5rem;
-    color: $color;
-}
+// @mixin headerStyles($color) { 
+//     text-transform: uppercase;
+//     text-align: center;
+//     font-size: 4.5rem;
+//     color: $color;
+// }
+
+// Top of cover-screen
+
+$hand: 'Permanent Marker', cursive;
+
+$sans: 'Roboto', sans-serif;

@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:700" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>HELLO my name is</title>
 </head>
 <body>
-    
-    
-    <div class="start-of-game">
-        <div class="start-of-game-inner">
-            <h1 class="big">Hello</h1>
-            <h1 class="small">my name is</h1>
-            <form class="choose-game-list">
+
+
+    <div class="cover-game">
+        <div class="cover-game-inner">
+            <div class="cover-game-top">
+                <h1 class="hide-show-at-end big">Hello</h1>
+                <h1 class="hide-show-at-end small">my name is</h1>
+                <h2 class="hide-show-at-end big hidden">HELLO my name is</h2>
+                <h2 class="hide-show-at-end small hidden">Final Score</h2>
+            </div>
+            <div class="cover-game-middle hide-show-at-end hidden">
+                <h2 class="">Final Score</h2>
+                <p class="final-score">42</p>
+
+            </div>
+            <div class="cover-game-bottom hide-show-at-end hidden">
+                <button class="new-game-button">New Game</button>
+            </div>
+            <form class="hide-show-at-end choose-game-list">
                 <div class="form-content">
                     <div class="game-list-label">
                         <label for="game-list">Select Topic</label>
@@ -27,7 +41,9 @@
                         <option value="batman">Batman - 60s</option>
                     </select>
                 </div>
-                <button class="start-game-button">Start Game!</button>
+                <div class="form-bottom">
+                    <button class="start-game-button">Start Game!</button>
+                </div>
             </form>
         </div>
     </div>
@@ -43,7 +59,7 @@
         </div>
         
         <div class="game-info">
-            <h2 class="time-remaining">Time Left: 60</h2>
+            <h2 class="time-remaining">Time: <span class="time-remaining-time">60</span></h2>
             <h2 class="score"></h2>
         </div>
 
@@ -54,16 +70,7 @@
 
     </div> 
     <!-- end of wrapper -->
-    
-    <div class="end-of-game">
-        <div class="end-of-game-content">
-            <h2 class="final-score">Final Score: 0</h2> 
-            <!-- Text will be replaced by jQuery - content for layout purposes -->
-            
-            <button class="new-game-button">New Game</button>
-            <!-- resets game for another round (theoretically...)-->
-        </div>
-    </div>
+   
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>

@@ -429,7 +429,7 @@ zzz.randomArrayIndex = function(array) {
     return randIndex;
 };
 
-zzz.timeRemaining = 60;
+zzz.timeRemaining = 5;
 
 // We're leaving together, But still it's farewell, And maybe we'll come back, To earth, who can tell? I guess there is no one to blame. We're leaving ground (leaving ground). Will things ever be the same again?
 zzz.countDown = function() {
@@ -437,12 +437,12 @@ zzz.countDown = function() {
         
         zzz.timeRemaining--;
         
-        $('.time-remaining').text(`Time Left: ${zzz.timeRemaining}`)
+        $('.time-remaining-time').text(zzz.timeRemaining);
 
         if(zzz.timeRemaining === 0){
             clearInterval(count);
             
-            $('.final-score').text(`Final Score: ${zzz.score}`);
+            $('.final-score').text(zzz.score);
             zzz.displayEndOfGame();
         };
     }, 1000);
@@ -494,7 +494,8 @@ zzz.chooseGameList = function(){
         zzz.buildNew();
         zzz.buttonClick();
         
-        $('.start-of-game').toggleClass('hidden');
+        // $('.start-of-game').toggleClass('hidden');
+        $('.cover-game').toggleClass('hidden');
     });
     
 
@@ -662,7 +663,12 @@ zzz.buttonClick = function() {
 zzz.score = 0;
 
 zzz.displayEndOfGame = function() {
-    $('.end-of-game').toggleClass('visible');
+    // $('.end-of-game').toggleClass('visible');
+    $('.cover-game').toggleClass('hidden');
+    // $('.choose-game-list').toggleClass('hidden');
+    $('.hide-show-at-end').toggleClass('hidden');
+    // $('.cover-game-middle').toggleClass('hidden');
+    // $('.cover-game-bottom').toggleClass('hidden');
 }
 
 // Reloads the page

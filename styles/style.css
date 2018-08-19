@@ -140,7 +140,8 @@ html {
   padding: 0; }
 
 html {
-  background: #9f9f9f; }
+  background: #9f9f9f;
+  font-family: "Roboto", sans-serif; }
 
 .wrapper {
   width: 90%;
@@ -157,15 +158,16 @@ h1 {
   color: white;
   text-align: center; }
 
-h1.big {
+.big {
   font-size: 15rem;
   text-transform: uppercase;
-  font-weight: bold;
-  padding-top: 3vh; }
+  color: white;
+  text-align: center; }
 
-h1.small {
+.small {
   font-size: 8rem;
-  padding-bottom: 3vh; }
+  color: white;
+  text-align: center; }
 
 .start-of-game {
   margin: 0 auto;
@@ -185,6 +187,63 @@ h1.small {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.cover-game {
+  margin: 0 auto;
+  background: #9f9f9f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.cover-game-inner {
+  background: #b40000;
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  border-radius: 7vw; }
+
+.cover-game-top {
+  height: 35vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.cover-game-middle,
+.form-content {
+  background: white;
+  height: 40vh; }
+
+.cover-game-bottom,
+.form-bottom {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.final-score {
+  font-size: 20rem;
+  font-family: "Permanent Marker", cursive; }
+
 .start-of-game-inner {
   background: #b40000;
   width: 90%;
@@ -193,9 +252,7 @@ h1.small {
   border-radius: 7vw; }
 
 .form-content {
-  background: white;
   width: 100%;
-  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,28 +271,27 @@ h1.small {
   width: 100%;
   text-align: center;
   font-size: 8rem;
-  font-family: 'Patrick Hand SC', cursive;
-  font-weight: bold; }
+  font-family: "Permanent Marker", cursive; }
 
 .game-list {
   font-size: 3rem;
-  font-family: 'Patrick Hand SC', cursive;
-  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
   text-align: center;
   padding: 15px;
   width: 50%;
   height: 70px;
   margin-top: 10px; }
 
+.new-game-button,
 .start-game-button {
   width: 50%;
   font-size: 3rem;
-  margin: 65px auto;
   text-align: center;
   display: block;
   border: none;
   border-radius: 1vw;
-  height: 70px; }
+  height: 70px;
+  background: white; }
 
 .headshot {
   width: 50vh;
@@ -259,7 +315,7 @@ h1.small {
   font-size: 3rem; }
 
 .header-bottom {
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
 
 .game-info {
   display: -webkit-box;
@@ -300,7 +356,7 @@ h3 {
   padding-top: 10px; }
 
 .bottom {
-  font-size: 1rem;
+  font-size: 1.05rem;
   position: relative;
   padding-bottom: 10px; }
 
@@ -317,9 +373,34 @@ h3 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 4rem;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: 3.2rem;
+  font-family: "Permanent Marker", cursive;
   line-height: 1; }
+
+.end-of-game {
+  margin: 0 auto;
+  background: #9f9f9f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.end-of-game-content {
+  background: #b40000;
+  width: 90%;
+  max-width: 1000px;
+  height: 90vh;
+  border-radius: 7vw; }
 
 .hidden {
   display: none; }
