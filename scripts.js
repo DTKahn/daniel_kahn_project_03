@@ -429,7 +429,7 @@ zzz.randomArrayIndex = function(array) {
     return randIndex;
 };
 
-zzz.timeRemaining = 5;
+zzz.timeRemaining = 60;
 
 // We're leaving together, But still it's farewell, And maybe we'll come back, To earth, who can tell? I guess there is no one to blame. We're leaving ground (leaving ground). Will things ever be the same again?
 zzz.countDown = function() {
@@ -443,10 +443,14 @@ zzz.countDown = function() {
             clearInterval(count);
             
             $('.final-score').text(zzz.score);
+
+            $('.game-topic').text(zzz.gameTopic);
             zzz.displayEndOfGame();
         };
     }, 1000);
 };
+
+zzz.gameTopic = "";
 
 // Removes a number of items from a target array
 //// Takes args: 
@@ -487,6 +491,8 @@ zzz.chooseGameList = function(){
         console.log('form submitted');
 
         const gameListValue = $('#game-list').find(":selected").val();
+
+        zzz.gameTopic = $('#game-list').find(":selected").text();
 
         console.log(gameListValue);
 
