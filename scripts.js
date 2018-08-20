@@ -52,6 +52,7 @@ zzz.batman = [
     }
 ];
 
+// Did not end up using. Need more HackerYou dogs! (They're still in the game combined with other dogs in zzz.dogs)
 zzz.hackerYouDogs = [
     {
         name: 'Dug',
@@ -389,6 +390,120 @@ zzz.hackerYouCohort19 = [
     }
 ];
 
+zzz.hackerYouStaff = [
+    {
+        name: 'Adam',
+        url: 'assets/hackerYouTeam/adam-mcmillan.jpg'
+    },
+    {
+        name: 'Anne',
+        url: 'assets/hackerYouTeam/Anne.jpg'
+    },
+    {
+        name: 'Asaf',
+        url: 'assets/hackerYouTeam/asaf-gerchak.jpg'
+    },
+    {
+        name: 'Brandon',
+        url: 'assets/hackerYouTeam/brandon-keen.jpg'
+    },
+    {
+        name: 'Charlotte',
+        url: 'assets/hackerYouTeam/charlotte-nurse.jpg'
+    },
+    {
+        name: 'Christopher',
+        url: 'assets/hackerYouTeam/christopher-miller.jpg'
+    },
+    {
+        name: 'Danny',
+        url: 'assets/hackerYouTeam/danny-patton.jpg'
+    },
+    {
+        name: 'Heather',
+        url: 'assets/hackerYouTeam/heather.png'
+    },
+    {
+        name: 'Jas',
+        url: 'assets/hackerYouTeam/jasShukla-headshot.jpg'
+    },
+    {
+        name: 'Jazzmin',
+        url: 'assets/hackerYouTeam/Jazzmin_Vangeel.jpg'
+    },
+    {
+        name: 'Jenny',
+        url: 'assets/hackerYouTeam/jenny-Ngo.jpg'
+    },
+    {
+        name: 'Jenny',
+        url: 'assets/hackerYouTeam/jennyVeens.jpg'
+    },
+    {
+        name: 'Jordan',
+        url: 'assets/hackerYouTeam/Jordan_Deutsch.jpg'
+    },
+    {
+        name: 'Kristen',
+        url: 'assets/hackerYouTeam/kristen-spencer.jpg'
+    },
+    {
+        name: 'Melissa',
+        url: 'assets/hackerYouTeam/melissa-carter.jpg'
+    },
+    {
+        name: 'Ricardo',
+        url: 'assets/hackerYouTeam/ricardoVazquez.png'
+    },
+    {
+        name: 'Robin',
+        url: 'assets/hackerYouTeam/Robin_Hamill.jpg'
+    },
+    {
+        name: 'Ryan',
+        url: 'assets/hackerYouTeam/RyanChristiani.jpg'
+    },
+    {
+        name: 'Sam',
+        url: 'assets/hackerYouTeam/sam-low-chappell.jpg'
+    },
+    {
+        name: 'Sarah',
+        url: 'assets/hackerYouTeam/Sarah_Lesh.jpg'
+    },
+    {
+        name: 'Sarah',
+        url: 'assets/hackerYouTeam/sarah-kestenberg.jpg'
+    },
+    {
+        name: 'Simon',
+        url: 'assets/hackerYouTeam/simonBloom.jpg'
+    },
+    {
+        name: 'Suzette',
+        url: 'assets/hackerYouTeam/suzette-mccanny.jpg'
+    },
+    {
+        name: 'Tarra',
+        url: 'assets/hackerYouTeam/tarra-joshi.jpg'
+    },
+    {
+        name: 'Tiff',
+        url: 'assets/hackerYouTeam/Tiff_Nogueira.jpg'
+    },
+    {
+        name: 'Tom',
+        url: 'assets/hackerYouTeam/tomHaxell.jpg'
+    },
+    {
+        name: 'Trudy',
+        url: 'assets/hackerYouTeam/trudyMacnabb-headshot.jpg'
+    },
+    {
+        name: 'Zoe',
+        url: 'assets/hackerYouTeam/zoeDaniels.jpg'
+    }
+]
 // test array with 9 numbers
 zzz.array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -508,6 +623,7 @@ zzz.chooseGameList = function(){
 };
 
 // Stop classmates who have already been shown from showing again unless all have been shown
+
 // Holds the objects that have already been answered
 zzz.alreadyAnswered = [];
 
@@ -683,8 +799,6 @@ zzz.startNewGame = function() {
     });
 }
 
-// Limit play to 60 seconds
-//// Show countdown? (number or bar?)
 
 zzz.init = function() {
     console.log('And why doesn’t Batman dance anymore? Remember the Batusi?');
