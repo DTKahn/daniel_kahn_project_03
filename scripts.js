@@ -1,8 +1,6 @@
 const zzz = {};
 
-// Create a classmates object with
-//// Name
-//// Img (link to img)
+
 
 // TEST LIST: 60s BATMAN
 zzz.batman = [
@@ -234,6 +232,10 @@ zzz.dogs = [
         url: 'assets/dogs/dug-up.jpg'
     }
 ];
+
+// Create a classmates object with
+//// Name
+//// Img (link to img)
 
 zzz.hackerYouCohort19 = [
     {
@@ -503,7 +505,8 @@ zzz.hackerYouStaff = [
         name: 'Zoe',
         url: 'assets/hackerYouTeam/zoeDaniels.jpg'
     }
-]
+];
+
 // test array with 9 numbers
 zzz.array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -533,10 +536,10 @@ zzz.array1withObjects = [
         fruit: 'honeydew',
         stock: 14
     }
-]
+];
 
 // test empty array
-zzz.array2 = []
+zzz.array2 = [];
 
 // Takes an array and returns a number corresponding to random index in that array
 zzz.randomArrayIndex = function(array) {
@@ -565,6 +568,7 @@ zzz.countDown = function() {
     }, 1000);
 };
 
+// Used to display game topic in the score screen
 zzz.gameTopic = "";
 
 // Removes a number of items from a target array
@@ -598,6 +602,8 @@ zzz.correctAnswer = [];
 // The array used to play the game will be copied into this array
 zzz.gameList = [];
 
+
+// Starting screen where user selects game topic
 zzz.chooseGameList = function(){
     
     $('.choose-game-list').on('submit', function(event){
@@ -623,14 +629,13 @@ zzz.chooseGameList = function(){
 };
 
 // Stop classmates who have already been shown from showing again unless all have been shown
-
-// Holds the objects that have already been answered
+//// Holds the objects that have already been answered
 zzz.alreadyAnswered = [];
 
 // Moves answer zzz.correctAnswer to zzz.alreadyAnswered
 zzz.moveToAlreadyAnswered = function(){
     zzz.alreadyAnswered.push(zzz.correctAnswer.splice(0,1)[0]);
-}
+};
 
 // Copy array to new array which will be modified during play
 zzz.setGameList = function(subjectArray){
@@ -641,7 +646,7 @@ zzz.setGameList = function(subjectArray){
     // subjectArray.forEach((item) => {
         zzz.gameList.push(item);
     });
-}
+};
 
 zzz.clearAnswerOptions = function(){
     zzz.answerOptions = [];
@@ -650,7 +655,7 @@ zzz.clearAnswerOptions = function(){
 // Moves 1 object from the gameList to correctAnswer
 zzz.setCorrectAnswer = function(){
     zzz.arrayToArray(zzz.gameList, zzz.correctAnswer, 1);
-}
+};
 
 // Removes 3 objects from zzz.gameList and adds them to zzz.answerOptions
 //// Using arrayToArray which leverages splice, rather than using slice so that we do not return the same wrong answer option more than once
@@ -678,12 +683,12 @@ zzz.setWrongAnswerOptions = function(){
         // Adds the wrong answer options to zzz.answerOptions
         zzz.answerOptions.push(element);
     });
-}
+};
 
 
 zzz.addCorrectAnswerToAnswerOptions = function(){
     zzz.answerOptions.push(zzz.correctAnswer.slice(0)[0])
-}
+};
 
 // Takes an array containing 1 object which has an img attribute and displays it under an object with the class "headshot"
 zzz.showHeadshot = function(objectWithImgAttr) {
@@ -713,7 +718,7 @@ zzz.buildAnswerButtons = function() {
         
         $('.answers').append($button);
     });
-}
+};
 
 // Calls all the functions need to display the question
 zzz.buildNew = function(){
@@ -728,7 +733,7 @@ zzz.buildNew = function(){
     zzz.addCorrectAnswerToAnswerOptions();
 
     zzz.buildAnswerButtons();
-}
+};
 
 // Checks if length of zzz.gameList is 0 and if it is, rebuilds it from  zzz.alreadyAnswered, clearing zzz.alreadyAnwered
 zzz.rebuildGameList = function(){
@@ -779,7 +784,7 @@ zzz.buttonClick = function() {
         
         zzz.clickCount++;
     });    
-}
+};
 
 // Keep track of score
 //// +1 for every correct answer
@@ -797,7 +802,7 @@ zzz.startNewGame = function() {
     $('.new-game-button').on('click', function(){
         location.reload();
     });
-}
+};
 
 
 zzz.init = function() {

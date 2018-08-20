@@ -3,6 +3,11 @@
 @import "partials/setup";
 @import "partials/utils";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     background: rgb(159, 159, 159);
     font-family: $sans;
