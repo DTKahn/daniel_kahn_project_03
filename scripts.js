@@ -1,5 +1,123 @@
 const zzz = {};
 
+zzz.gero = [
+    {
+        name: 'Adam',
+        url: 'assets/gero/adam.jpg'
+    },
+    {
+        name: 'Audrey',
+        url: 'assets/gero/audrey.jpg'
+    },
+    {
+        name: 'Bobby',
+        url: 'assets/gero/bobby.jpg'
+    },
+    {
+        name: 'Brad',
+        url: 'assets/gero/brad.jpg'
+    },
+    {
+        name: 'Dara',
+        url: 'assets/gero/dara.jpg'
+    },
+    {
+        name: 'David',
+        url: 'assets/gero/david_k.jpg'
+    },
+    {
+        name: 'David',
+        url: 'assets/gero/david_s.jpg'
+    },
+    {
+        name: 'Elaina',
+        url: 'assets/gero/elaina.jpg'
+    },
+    {
+        name: 'Jake',
+        url: 'assets/gero/jake.jpg'
+    },
+    {
+        name: 'Jeremy',
+        url: 'assets/gero/jeremy.jpg'
+    },
+    {
+        name: 'Jess',
+        url: 'assets/gero/jess.jpg'
+    },
+    {
+        name: 'Jimmy',
+        url: 'assets/gero/jimmy.jpg'
+    },
+    {
+        name: 'Josh',
+        url: 'assets/gero/josh.jpg'
+    },
+    {
+        name: 'Julian',
+        url: 'assets/gero/julian.jpg'
+    },
+    {
+        name: 'Koralia',
+        url: 'assets/gero/koralia.jpg'
+    },
+    {
+        name: 'Laura',
+        url: 'assets/gero/laura.jpg'
+    },
+    {
+        name: 'Linda',
+        url: 'assets/gero/linda.jpg'
+    },
+    {
+        name: 'Lisa',
+        url: 'assets/gero/lisa.jpg'
+    },
+    {
+        name: 'Lucy',
+        url: 'assets/gero/lucy.jpg'
+    },
+    {
+        name: 'Matt',
+        url: 'assets/gero/matt.jpg'
+    },
+    {
+        name: 'Michael',
+        url: 'assets/gero/michael.jpg'
+    },
+    {
+        name: 'Mitch',
+        url: 'assets/gero/mitch.jpg'
+    },
+    {
+        name: 'Rachel',
+        url: 'assets/gero/rachel.jpg'
+    },
+    {
+        name: 'Ronnie',
+        url: 'assets/gero/ronnie.jpg'
+    },
+    {
+        name: 'Saba',
+        url: 'assets/gero/saba.jpg'
+    },
+    {
+        name: 'Sandy',
+        url: 'assets/gero/sandy.jpg'
+    },
+    {
+        name: 'Shirley',
+        url: 'assets/gero/shirley.jpg'
+    },
+    {
+        name: 'Steph',
+        url: 'assets/gero/steph.jpg'
+    },
+    {
+        name: 'Tyler',
+        url: 'assets/gero/tyler.jpg'
+    }
+];
 
 
 // TEST LIST: 60s BATMAN
